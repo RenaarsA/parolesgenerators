@@ -9,15 +9,26 @@
 
 <body>
     <div class='wrapper'>
+        <h1>Paroles</h1>
+        Cik ciparu parolē:
+        <input class='cipars' id='ciparuSkaits' value='5'/>
+        <br>
+        Cik variantus vēleies:
+        <input class='cipars' id='variantuSkaits' value='5'/>
+        <br/>
+        Kādu papildus vārdu vēlaties:
+        <input id='papildusVards' value=''/>
+        <br/>
+        
+        <input type="button" value="Ģeneret" onclick="generetParoles()"/>
+        
 
-        <button class="btn" onclick="generet()">Ģenerēt</button>
 
-
-        <table>
+        <table class="styled-table">
             <thead>
                 <tr>
-                    <td>Nr</td>
-                    <td>Parole</td>
+                    <th class="header">Nr</th>
+                    <th>Parole</th>
                 </tr>
             </thead>
             <tbody class="rindas">
